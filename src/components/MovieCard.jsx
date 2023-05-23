@@ -13,6 +13,7 @@ export default function MovieCard(props){
 
 const ContainerCard = styled.div`
   width: 20%;
+  aspect-ratio: 9/16;
   transition: transform 50ms ease;
   border-radius: 5px;
 
@@ -32,10 +33,11 @@ const ContainerCard = styled.div`
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: ${props => props.colors[2]};
+    color: ${props => props.colors[0]};
     
     border-radius: 5px;
-    background-color: ${props => props.colors[0]};
+    border: 1px solid ${props => props.colors[0]};
+    background-color: ${props => props.colors[2]};
 
     display: flex;
     justify-content: center;
@@ -60,7 +62,7 @@ const ContainerCard = styled.div`
         
         transform: scale(1.2, 1.2);
         margin-top: 10px;
-        border: 1px solid;
+        //border: 1px solid;
     }
   }
 `;

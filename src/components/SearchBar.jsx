@@ -15,11 +15,11 @@ const SearchInput = styled.input`
     width: 90%;
     height: 50px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    border: none;
+    border: 1px solid ${props => props.colors[2]};
     border-radius: 5px;
 
     position: absolute;
-    top: 30%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, 0);
     transition: transform 100ms ease;
@@ -32,6 +32,20 @@ const SearchInput = styled.input`
     &:focus{
         transform: translate(-50%, 0) scale(1.05, 1.05);
     }
+
+    /* animation-duration: 1s;
+    animation-name: slidein;
+
+    @keyframes slidein {
+        from {
+            top: 50%;
+        }
+
+        to {
+            top: 30%;
+        }
+    }  */
+
 `;
 
 //initial size: w 60% h 30px, initial position: top 50% left 50%

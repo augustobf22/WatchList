@@ -31,13 +31,26 @@ export default function MoviesHome(props) {
 
 const ContainerMovies = styled.div`
     width: 75%;
-    height: 35%;
+    height: auto;
 
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, 0);
 
     display: flex;
     gap:2px;
+
+    /* animation-duration: 1s;
+    animation-name: opening;
+
+    @keyframes opening {
+        from {
+            width: 30%;
+        }
+
+        to {
+            width: 75%;
+        }
+    } */
 `;

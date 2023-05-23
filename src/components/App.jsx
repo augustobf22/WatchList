@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import SearchBar from './SearchBar'
 import MoviesHome from './MoviesHome'
 
-const colors = ["#E3C91D","#EA5145", "#2F2A67"];
+//const colors = ["#E3C91D", "#222021", "#2F2A67"];
+const colors = ["#222021", "#1f2428", "#f5c000"];
 
 export default function App() {
   return (
@@ -29,7 +30,8 @@ const ContainerHome = styled.div`
 const Header = styled.div`
   width: 100%;
   height: 100px;
-  background-color: ${colors[2]};
+  background-color: ${colors[0]};
+  border-bottom: 1px dotted ${colors[2]};
 
   position:fixed;
   top: 0px;
@@ -44,14 +46,14 @@ const Header = styled.div`
     font-family: 'Raleway', sans-serif;
     font-size: 55px;
     font-weight: 700;
-    color: ${colors[0]};
+    color: ${colors[2]};
     transform: translateX(-15px);
   }
 
   ion-icon{
     font-size: 35px;
     margin-left: 15px;
-    color: ${colors[0]};
+    color: ${colors[2]};
 
     &:hover{
       cursor: pointer;
